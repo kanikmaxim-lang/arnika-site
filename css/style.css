@@ -1,11 +1,4 @@
 
-
-
-
-
-
-
-
 :root {
   --bg: #0a0e1a;
   --bg-alt: #0d1222;
@@ -654,23 +647,41 @@ a {
   margin-top: 10px;
 }
 
-.footer__socials a {
+.footer__social {
   width: 40px;
   height: 40px;
   display: grid;
   place-items: center;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 700;
-  border: 1px solid var(--line);
+  border: 1px solid transparent;
   border-radius: 50%;
-  color: var(--muted);
-  transition: all 0.2s ease;
+  color: #fff;
+  transition: transform 0.2s ease, filter 0.2s ease;
 }
 
-.footer__socials a:hover {
-  border-color: var(--accent);
-  color: #fff;
-  background: var(--accent);
+.footer__social svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.footer__social:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.08);
+}
+
+.footer__social--vk {
+  background: #0077ff;
+}
+
+.footer__social--tg {
+  background: #229ed9;
+}
+
+.footer__social--max {
+  background: #005cff;
+  letter-spacing: 0.02em;
 }
 
 .footer__bottom {
